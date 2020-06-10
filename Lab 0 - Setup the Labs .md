@@ -22,7 +22,7 @@ Name your environment and provide a description, then press **Next step**
 
 **Warning** If you are running  this workshop within the same account as other people, please make sure  to name your environment with a customized name of your choosing in  order to find your environment. Why not your name?
 
-![Start](./images/cloud9-name.png)
+![Start cloud9](./images/cloud9-name.png)
 
 Now configure your Cloud9 instance:
 

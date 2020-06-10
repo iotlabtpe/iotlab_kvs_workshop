@@ -44,7 +44,7 @@ There are billions of connected edge devices in our homes, offices, cars, planes
 
 ## Amazon Kinesis Video Streams Concept
 
-![img](images/KVS-concept.png)
+![Amazon Kinesis Video Streams Concept](images/KVS-concept.png)
 
 - The SDK packages the frames and fragments that generate and use its (transform layer security protocol) to send the data and provide data integrity., as a video stream in, we have 2 APIs for consumers:
 
@@ -95,12 +95,12 @@ Kinesis Video Streams offers a library that you can use within your applications
 ## Kinesis Video Streams Producer 
 > Easily connect and stream from camera sources
 
-![img](images/concurrency.png)
+![Kinesis Video Streams Producer](images/concurrency.png)
 
 ## Kinesis Video Streams Producer C SDK 
 > Perfect for resource limited camera devices, especially those RTOS based.
 
-![img](images/c-sdk.png)
+![Producer C SDK](images/c-sdk.png)
 
 
 

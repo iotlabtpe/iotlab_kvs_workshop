@@ -17,7 +17,7 @@ Kinesis Video Streams SDK will require your IAM user’s access and secret Keys 
 
 Open [cloud9](https://console.aws.amazon.com/cloud9/) console and , install the dependences:
 
-![Start](images/install-dependences.png)
+![install dependences](images/install-dependences.png)
 
 ```
 sudo apt-get update
@@ -55,7 +55,7 @@ export AWS_ACCESS_KEY_ID=xxx
 ```
 ./kvsAacAudioVideoStreamingSample my-kvs-stream 6000
 ```
-![Start](images/kvs-put-media.png)
+![kvs-put-media](images/kvs-put-media.png)
 
 
 ### media playback
@@ -63,12 +63,12 @@ Kinesis Video Streams console can playback video
 1.	Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/kinesisvideo/.
 2.	In the navigation pane, choose Video streams and then choose my-kvs-stream.
 
-![Start](images/kvs-stream.png)
+![kvs-stream](images/kvs-stream.png)
 
 4.	Click Media playback
 5.	You will see the media playback.
 
-![Start](images/kvs-media-playback.png)
+![kvs-media-playback](images/kvs-media-playback.png)
 
 
 6. Additionally, we recommend you to try other test page in advance.
