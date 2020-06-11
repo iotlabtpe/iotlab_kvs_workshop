@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.278.1/aws-sdk.min.js"></script>
+        <title>Amazon Kinesis Video Streams HLS Viewer</title>
+    </head>
+    <body>
+        <h1 style="margin: 20px 0;">Amazon Kinesis Video Streams HLS Viewer</h1>
+        <div id="playerContainer" style="margin: 20px 0;">
+
+            <!-- VideoJS elements -->
+            <video id="videojs" class="player video-js vjs-default-skin" controls autoplay></video>
+            <link rel="stylesheet" href="https://vjs.zencdn.net/6.6.3/video-js.css">
+            <script src="https://vjs.zencdn.net/6.6.3/video.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.14.1/videojs-contrib-hls.js"></script>
+        </div>
+        <button id="start" type="submit" class="btn btn-primary">Start Playback</button>
+        <script>
+            console.log("Page loaded");
+            
+            // Step 2 Goes Here
+
+        </script>
+        <style>
+            .vjs-big-play-button { display: none !important; }
+        </style>
+    </body>
+</html>
