@@ -9,7 +9,7 @@
 
 
 ## Target Audience
-- IoT Architects, Embeded Software Developers / Engineers
+- IoT Architects/Proserv/TAMs, Embeded Software Developers / Engineers
 - Interested in building video oriented workflows from devices and fine tuning for real world  
 - Level 300 – Working knowledge of core AWS services
 - Sample code will be provided
