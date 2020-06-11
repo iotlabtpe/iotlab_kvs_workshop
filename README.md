@@ -1,4 +1,4 @@
-# Kinesis Video Stream(C producer) workshop
+# KVS C producer workshop (Alpha)
 
 ## **Workshop Objectives**
 
