@@ -1,5 +1,8 @@
 # KVS C producer workshop (Alpha)
 
+>For those workshop continued for two hours need to go through the Labs with star(*),
+>One hour workshop should skip them.
+
 ## **Workshop Objectives**
 
 - Work through the video ingestion data pipeline and playback of Video
