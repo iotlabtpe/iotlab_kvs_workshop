@@ -13,6 +13,11 @@ pDeviceInfo->storageInfo.storageSize = 3 * 1024 * 1024;
 
 
 3. Save, make and test.
+```
+cd build
+make
+./kvsAacAudioVideoStreamingSample my-kvs-stream 6000
+```
 4. Checking
 After setting `storageSize` to 3MB, we can finger out the RAM comsuption like this:
 
@@ -25,7 +30,7 @@ VmRSS is the RAM consumption, it almost 18MB on the Ubuntu18.04 now.
 
 ## change to mbedTLS
 
-Forthermore, we can reduce the RAM consumption by change the default OpenSSL to MbedTLS.
+Furthermore, we can reduce the RAM consumption by change the default OpenSSL to MbedTLS.
 
 
 ```
@@ -69,6 +74,7 @@ There are some usefull information, AKA Metrics in KVS, like `Currently availabl
 
 4. Save, make and test.
 ```
+cd build
 make
 ./kvsVideoOnlyStreamingSample your-kvs-name 600 ../samples/h264SampleFrames/
 ```
