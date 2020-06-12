@@ -4,11 +4,14 @@
 
 Default storage size(mostly video buffer) is 128MB, which is should be able to buffer up to 120s video data. But embeded device usually don't have enough RAM. So let's change it to reduce RAM consumption.
 
-1. Double click on amazon-kinesis-video-streams-producer-c/samples/KvsAacAudioVideoStreamingSample.c 
-2. add one line after line 222:
+1. Double click on `amazon-kinesis-video-streams-producer-c/samples/KvsAacAudioVideoStreamingSample.c` 
+2. add one line after line `CHK_STATUS(createDefaultDeviceInfo(&pDeviceInfo));`:
 ```
 pDeviceInfo->storageInfo.storageSize = 3 * 1024 * 1024; 
 ```
+![ram consumption](images/lab2/sourcecode-ram.png)
+
+
 3. Save, make and test.
 4. Checking
 After setting `storageSize` to 3MB, we can finger out the RAM comsuption like this:
