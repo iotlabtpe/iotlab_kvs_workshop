@@ -47,21 +47,27 @@ You can find those in the downloaded file, which described in "Get your AWS acco
 
 ```
 export AWS_SECRET_ACCESS_KEY=xxx
-export AWS_DEFAULT_REGION=xxx
 export AWS_ACCESS_KEY_ID=xxx
+export AWS_DEFAULT_REGION=us-west-2	
 ```
 
-### start to put media
+### Start to put media
 ```
-./kvsAacAudioVideoStreamingSample my-kvs-stream 6000
+# Put media to "my-kvs-stream" on KVS for 600 seconds.
+./kvsAacAudioVideoStreamingSample my-kvs-stream 600
 ```
 ![kvs-put-media](images/kvs-put-media.png)
+>Note:
+>KVS will create "my-kvs-stream" automatically once received video data.
 
-
-### media playback
+### Media playback
 Kinesis Video Streams console can playback video
 1.	Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/kinesisvideo/.
-2.	In the navigation pane, choose Video streams and then choose my-kvs-stream.
+2.	Make sure "us-west-2" region by selecting it on the top right corner of web page.
+
+![kvs-stream](images/lab1/kvs-region.png)
+
+3.	In the navigation pane, choose Video streams and then choose "my-kvs-stream".
 
 ![kvs-stream](images/kvs-stream.png)
 
