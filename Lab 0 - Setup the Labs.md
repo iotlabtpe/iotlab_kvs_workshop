@@ -12,17 +12,17 @@ Once you have setup the environment, you will be able to build and  compile the 
 
 Log in to your AWS Account Console and search for Cloud9
 
-![Search for Cloud9](images/c9-00-search.png)
+![Search for Cloud9](images/lab0/c9-00-search.png)
 
 Create a New Environment by clicking the **Create Environment** button
 
-![Create the Cloud9 env](images/c9-01-create-env.png)
+![Create the Cloud9 env](images/lab0/c9-01-create-env.png)
 
 Name your environment and provide a description, then press **Next step**
 
 **Warning** If you are running  this workshop within the same account as other people, please make sure  to name your environment with a customized name of your choosing in  order to find your environment. Why not your name?
 
-![Start cloud9](./images/cloud9-name.png)
+![Start cloud9](images/lab0/cloud9-name.png)
 
 Now configure your Cloud9 instance:
 
@@ -31,11 +31,11 @@ Now configure your Cloud9 instance:
 - Choose **Ubuntu Linux** for the Platform
 - Press **Next step**
 
-![Configure the Cloud9 env](./images/cloud9-config.png)
+![Configure the Cloud9 env](images/lab0/cloud9-config.png)
 
 - Review and press **Create environment**
 
-![Review the Cloud9 env](./images/cloud9-review.png)
+![Review the Cloud9 env](images/lab0/cloud9-review.png)
 
 ## Done
 

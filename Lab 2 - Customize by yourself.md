@@ -21,7 +21,7 @@ make
 4. Checking
 After setting `storageSize` to 3MB, we can finger out the RAM comsuption like this:
 
-![ram consumption](images/kvs-ram-openSSL.png)
+![ram consumption](images/lab2/kvs-ram-openSSL.png)
 
 VmRSS is the RAM consumption, it almost 18MB on the Ubuntu18.04 now. 
 
@@ -60,7 +60,7 @@ There are some usefull information, AKA Metrics in KVS, like `Currently availabl
     ClientMetrics kinesisVideoClientMetrics;
     kinesisVideoClientMetrics.version = CLIENT_METRICS_CURRENT_VERSION;
 ```
-![metrics1](images/kvs-metrics-1.png)
+![metrics1](images/lab2/kvs-metrics-1.png)
 
 3. add one line after line 137, ` CHK_STATUS(readFrameData(&frame, frameFilePath));`:
 ```
@@ -70,7 +70,7 @@ There are some usefull information, AKA Metrics in KVS, like `Currently availabl
             kinesisVideoClientMetrics.contentStoreAvailableSize >> 10 \
     );
 ```
-![metrics2](images/kvs-metrics-2.png)
+![metrics2](images/lab2/kvs-metrics-2.png)
 
 
 4. Save, make and test.
@@ -82,7 +82,7 @@ make
 
 5. Checking
 
-![metrics-result](images/kvs-metrics-result.png)
+![metrics-result](images/lab2/kvs-metrics-result.png)
 
 The `available storage size` is very important when the SDK encounters a stream latency condition. user application need to check this parameter frequently and reduce video bit rate or frame per second under such condition. 
 

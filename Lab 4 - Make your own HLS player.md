@@ -40,7 +40,7 @@ To get started with HLS playback of a KVS stream, start by creating a skeleton H
 
 Open the HTML file in a web browser (preferably Chrome). You should see a page that looks like this:
 
-![player](images/player.png)
+![player](images/lab4/player.png)
 
 If you open the browser console (Option + Command + I on Mac and Control + Shift + I on Windows) you should see the “Page loaded” message.
 

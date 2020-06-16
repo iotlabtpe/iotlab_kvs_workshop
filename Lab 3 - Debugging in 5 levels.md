@@ -6,7 +6,7 @@
 export AWS_KVS_LOG_LEVEL=1
 ```
 
-![verbose](images/kvs-debug-verbose.png)
+![verbose](images/lab3/kvs-debug-verbose.png)
 
 
 
@@ -15,13 +15,13 @@ export AWS_KVS_LOG_LEVEL=1
 ```
 export KVS_DEBUG_DUMP_DATA_FILE_DIR=$PWD
 ```
-![dump video](images/kvs-debug-mkv.png)
+![dump video](images/lab3/kvs-debug-mkv.png)
 
 
 
 ## Cloudwatch metrics. But *no log, only graphics.*
 
-![Cloudwatch](images/kvs-debug-cloudwatch.png)
+![Cloudwatch](images/lab3/kvs-debug-cloudwatch.png)
 
 
 
