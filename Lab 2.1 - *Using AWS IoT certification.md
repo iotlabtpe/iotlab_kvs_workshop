@@ -1,3 +1,12 @@
+---
+layout: default
+categories: [lab]
+tags: [setup]
+excerpt_separator: <!--more-->
+permalink: /lab/lab-2-1
+name: /lab/lab-2.html
+---
+
 ## Lab 2.1 - Using AWS IoT certification
 
 This section describes how to enable a device (for example, a camera) to send audio/video data to one particular Kinesis video stream only. You can do this by using the AWS IoT credentials provider and an AWS Identity and Access Management (IAM) role.
@@ -299,5 +308,5 @@ credential_provider = make_unique<IotCertCredentialProvider>(iot_get_credential_
 ## Done
 
 
-You are done with the Customize and are ready to move to [Lab 3]
+You are done with the Customize and are ready to move to [Lab 3]({{ "/lab-3" | absolute_url }})
 

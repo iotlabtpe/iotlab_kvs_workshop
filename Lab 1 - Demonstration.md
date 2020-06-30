@@ -1,3 +1,12 @@
+---
+layout: default
+categories: [lab]
+tags: [setup]
+excerpt_separator: <!--more-->
+permalink: /lab/lab-1
+name: /lab/lab-1.html
+---
+
 # Kinesis Video Stream demo
 
 ## Get your AWS account Credentials
@@ -86,4 +95,4 @@ Kinesis Video Streams console can playback video
 ## Done
 
 
-You are done with the KVS demonstration and are ready to move to [Lab 2]
+You are done with the KVS demonstration and are ready to move to [Lab 2]({{ "/lab-2" | absolute_url }})

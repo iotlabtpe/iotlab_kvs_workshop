@@ -1,4 +1,4 @@
-# KVS C producer workshop (Alpha)
+# KVS C producer workshop (Beta)
 
 >For those workshop continued for two hours need to go through the Labs with star(*),
 >One hour workshop should skip them.

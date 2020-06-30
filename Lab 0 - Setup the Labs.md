@@ -1,3 +1,12 @@
+---
+layout: default
+categories: [lab]
+tags: [lab0]
+excerpt_separator: <!--more-->
+permalink: /lab/lab-0
+name: /lab/lab-0.html
+---
+
 # Lab 0 - Setup the Labs
 
 The following Setup Guide is designed to help you get up and running quickly for the workshop.
@@ -40,4 +49,4 @@ Now configure your Cloud9 instance:
 ## Done
 
 
-You are done with the IDE setup and are ready to move to [Lab 1]
+You are done with the IDE setup and are ready to move to [Lab 1]({{ "/lab-1" | absolute_url }})

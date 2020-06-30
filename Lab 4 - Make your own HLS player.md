@@ -1,4 +1,13 @@
-# Module 2: Playback Video Using HTTP Live Streaming (HLS) in Amazon Kinesis Video Streams 
+---
+layout: default
+categories: [lab]
+tags: [setup]
+excerpt_separator: <!--more-->
+permalink: /lab/lab-4
+name: /lab/lab-4.html
+---
+
+# Make your own HLS player 
 
 ## Step 1: Create HTML Page
 
@@ -168,4 +177,4 @@ https://github.com/aws-samples/amazon-kinesis-video-streams-hls-viewer/blob/mast
 ## Done
 
 
-You are done with the HLS player and are ready to move to [Lab 5]
+You are done with the HLS player and are ready to move to [Lab 5]({{ "/lab-5" | absolute_url }})

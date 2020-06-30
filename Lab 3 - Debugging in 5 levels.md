@@ -1,4 +1,13 @@
-# Debug
+---
+layout: default
+categories: [lab]
+tags: [setup]
+excerpt_separator: <!--more-->
+permalink: /lab/lab-3
+name: /lab/lab-3.html
+---
+
+# Debugging in 5 levels
 
 ## Log, verbose log!
 
@@ -47,4 +56,4 @@ https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_ListFragmen
 ## Done
 
 
-You are done with the debugging and are ready to move to [Lab 4]
+You are done with the debugging and are ready to move to [Lab 4]({{ "/lab-4" | absolute_url }})
