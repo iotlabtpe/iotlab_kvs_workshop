@@ -56,4 +56,4 @@ https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_ListFragmen
 ## Done
 
 
-You are done with the debugging and are ready to move to [Lab 4]({{ "/lab-4" | absolute_url }})
+You are done with the debugging and are ready to move to [Lab 4]({{ "/lab/lab-4" | absolute_url }})

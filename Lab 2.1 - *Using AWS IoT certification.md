@@ -308,5 +308,5 @@ credential_provider = make_unique<IotCertCredentialProvider>(iot_get_credential_
 ## Done
 
 
-You are done with the Customize and are ready to move to [Lab 3]({{ "/lab-3" | absolute_url }})
+You are done with the Customize and are ready to move to [Lab 3]({{ "/lab/lab-3" | absolute_url }})
 

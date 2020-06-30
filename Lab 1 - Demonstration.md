@@ -95,4 +95,4 @@ Kinesis Video Streams console can playback video
 ## Done
 
 
-You are done with the KVS demonstration and are ready to move to [Lab 2]({{ "/lab-2" | absolute_url }})
+You are done with the KVS demonstration and are ready to move to [Lab 2]({{ "/lab/lab-2" | absolute_url }})

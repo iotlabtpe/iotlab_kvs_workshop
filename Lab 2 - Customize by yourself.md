@@ -99,6 +99,6 @@ The `available storage size` is very important when the SDK encounters a stream 
 
 ## Done
 
-You are done with the Customize and are ready to move to [Lab 3]({{ "/lab-3" | absolute_url }})
+You are done with the Customize and are ready to move to [Lab 3]({{ "/lab/lab-3" | absolute_url }})
 
-You can go to [Lab 2.1]({{ "/lab-2-1" | absolute_url }}) if this workshop is 2 hours long rather than 1 hour.
+You can go to [Lab 2.1]({{ "/lab/lab-2-1" | absolute_url }}) if this workshop is 2 hours long rather than 1 hour.

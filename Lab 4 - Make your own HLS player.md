@@ -177,4 +177,4 @@ https://github.com/aws-samples/amazon-kinesis-video-streams-hls-viewer/blob/mast
 ## Done
 
 
-You are done with the HLS player and are ready to move to [Lab 5]({{ "/lab-5" | absolute_url }})
+You are done with the HLS player and are ready to move to [Lab 5]({{ "/lab/lab-5" | absolute_url }})

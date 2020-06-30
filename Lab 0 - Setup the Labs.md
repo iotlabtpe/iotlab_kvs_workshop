@@ -49,4 +49,4 @@ Now configure your Cloud9 instance:
 ## Done
 
 
-You are done with the IDE setup and are ready to move to [Lab 1]({{ "/lab-1" | absolute_url }})
+You are done with the IDE setup and are ready to move to [Lab 1]({{ "/lab/lab-1" | absolute_url }})
