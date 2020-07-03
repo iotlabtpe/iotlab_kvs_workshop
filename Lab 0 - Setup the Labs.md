@@ -15,11 +15,10 @@ For this, we will be using [AWS Cloud9 Development ](https://aws.amazon.com/clou
 
 Once you have setup the environment, you will be able to build and  compile the different labs, you will download the binary compiled  firmware files, and you will flash your device locally on your laptop.
 
-**ProTip:** You can also follow the [Local Setup Guide](https://teuteuguy.github.io/amazon-freertos-workshop-docs/docs/local-setup-guide) to setup the environment for local development.
 
 ## Create Cloud9 Environment
 
-Log in to your AWS Account Console and search for Cloud9
+Log in to your [AWS Account Console](https://console.aws.amazon.com) and search for Cloud9
 
 ![Search for Cloud9](images/lab0/c9-00-search.png)
 

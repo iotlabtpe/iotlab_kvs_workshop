@@ -24,7 +24,7 @@ Kinesis Video Streams SDK will require your IAM user’s access and secret Keys 
 
 ## Compile the KVS producer code
 
-Open [cloud9](https://console.aws.amazon.com/cloud9/) console and , install the dependences:
+1. Open [cloud9](https://console.aws.amazon.com/cloud9/) console and , install the dependences:
 
 ![install dependences](images/lab1/install-dependences.png)
 
@@ -34,13 +34,13 @@ sudo apt-get install -y cmake git gcc g++ autoconf
 sudo apt-get install -y libssl-dev libcurl4-openssl-dev liblog4cplus-dev pkg-config
 ```
 
-Download code from GitHub:
+2. Clone KVS producer C code from GitHub:
 
 ```
 git clone --recursive https://github.com/awslabs/amazon-kinesis-video-streams-producer-c.git
 ```
 
-Compile
+3. Compile
 
 ```
 cd amazon-kinesis-video-streams-producer-c/
@@ -71,17 +71,17 @@ export AWS_DEFAULT_REGION=us-west-2
 
 ### Media playback
 Kinesis Video Streams console can playback video
-1.	Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/kinesisvideo/.
-2.	Make sure "us-west-2" region by selecting it on the top right corner of web page.
+   1.	Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/kinesisvideo/.
+   2.	Make sure "us-west-2" region by selecting it on the top right corner of web page.
 
 ![kvs-stream](images/lab1/kvs-region.png)
 
-3.	In the navigation pane, choose Video streams and then choose "my-kvs-stream".
+   3.	In the navigation pane, choose Video streams and then choose "my-kvs-stream".
 
 ![kvs-stream](images/lab1/kvs-stream.png)
 
-4.	Click Media playback
-5.	You will see the media playback.
+   4.	Click Media playback
+   5.	You will see the media playback.
 
 ![kvs-media-playback](images/lab1/kvs-media-playback.png)
 

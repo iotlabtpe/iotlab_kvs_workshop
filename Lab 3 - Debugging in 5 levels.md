@@ -9,7 +9,7 @@ name: /lab/lab-3.html
 
 # Debugging in 5 levels
 
-## Log, verbose log!
+## 1.Log, verbose log!
 
 ```
 export AWS_KVS_LOG_LEVEL=1
@@ -19,7 +19,7 @@ export AWS_KVS_LOG_LEVEL=1
 
 
 
-## Dump video in mkv format to local
+## 2.Dump video in mkv format to local
 
 ```
 export KVS_DEBUG_DUMP_DATA_FILE_DIR=$PWD
@@ -28,13 +28,13 @@ export KVS_DEBUG_DUMP_DATA_FILE_DIR=$PWD
 
 
 
-## Cloudwatch metrics. But *no log, only graphics.*
+## 3.Cloudwatch metrics. But *no log, only graphics.*
 
 ![Cloudwatch](images/lab3/kvs-debug-cloudwatch.png)
 
 
 
-## CLI: aws kinesisVideo
+## 4.CLI: aws kinesisVideo
 
 ```
 # get reader endpoint
@@ -47,11 +47,13 @@ aws kinesis-video-archived-media get-media-for-fragment-list --stream-name my-kv
 
 
 
-## ListFragments API (not include)
+## 5.ListFragments API
+
+Returns a list of Fragment objects from the specified stream and timestamp range within the archived data.
+
+Listing fragments is eventually consistent. This means that even if the producer receives an acknowledgment that a fragment is persisted, the result might not be returned immediately from a request to ListFragments. However, results are typically available in less than one second. 
 
 https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/API_reader_ListFragments.html
-
-
 
 ## Done
 

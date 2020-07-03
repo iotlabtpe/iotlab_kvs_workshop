@@ -43,18 +43,11 @@ Furthermore, we can reduce the RAM consumption by change the default OpenSSL to 
 
 
 ```
-# Please delete previous project to avoid pertencial issue.
-git clone --recursive https://github.com/awslabs/amazon-kinesis-video-streams-producer-c.git
-cd amazon-kinesis-video-streams-producer-c/
-mkdir build
-cd build/ 
 cmake .. -DUSE_OPENSSL=OFF -DUSE_MBEDTLS=ON
 make
 export LD_LIBRARY_PATH=~/environment/amazon-kinesis-video-streams-producer-c/open-source/lib:$LD_LIBRARY_PATH
 ./kvsAacAudioVideoStreamingSample my-kvs-stream 6000
 ```
-
-*TBD, because source code bug*
 
 
 

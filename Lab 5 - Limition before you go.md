@@ -7,7 +7,7 @@ permalink: /lab/lab-5
 name: /lab/lab-5.html
 ---
 
-# Limit
+# Limition, before you go
 
 ### Q: What’s the limits for kinesis video stream services?
 
@@ -15,12 +15,12 @@ https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/limits.html
 
 
 
-- `Account Limit: Request TPS`, means How many time could we request per second per account. 
+- `Account Limit: Request TPS`, means How many times could we request per second per account. 
 - `Stream-level limit TPS`, means How many time could we request for that (video)stream per second. 
 - `Connection-level limit`, means How many concurrency could we have per (video)stream. 
 - `Session-level limit TPS`, similar to Connection-level limit, to be confirmed, Playback Protocol.
 
-*For example*, PutMedia
+*For example*, PutMedia, use this API to send media data to a Kinesis video stream. 
 
 | API          | Stream-level limit | Connection-level limit | Bandwidth limit | Fragment-level limit |
 | ------------ | ------------------ | ---------------------- | --------------- | -------------------- |
@@ -33,7 +33,7 @@ https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/limits.html
 
 > Customer software triggered by event, like human or pet passing, after that it will put 120 seconds video record up to KVS server, then stop this stream for cost saving. In certain case, two event happened side by side, first stream is still not finished due to networking jam, the second stream is going, in short under concurrency situation, video reiteration is not satisfied.
 
-### Q: How many producer(camera) and consumer(app or web media player)
+### Q: How many producer(camera) and consumer(player or EC2)
 
 One producer and two consumer, check *limits for kinesis video stream services*.
 
