@@ -71,7 +71,7 @@ export AWS_DEFAULT_REGION=us-west-2
 
 ### Media playback
 Kinesis Video Streams console can playback video
-   1.	Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/kinesisvideo/.
+   1.	Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/kinesisvideo/home.
    2.	Make sure "us-west-2" region by selecting it on the top right corner of web page.
 
 ![kvs-stream](images/lab1/kvs-region.png)
