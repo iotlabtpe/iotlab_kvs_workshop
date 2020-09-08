@@ -14,9 +14,10 @@ name: /lab/lab-2.html
 Default storage size(mostly video buffer) is 128MB, which is should be able to buffer up to 120s video data. But embeded device usually don't have enough RAM. So let's change it to reduce RAM consumption.
 
 1. Double click on `amazon-kinesis-video-streams-producer-c/samples/KvsAacAudioVideoStreamingSample.c` 
-2. add one line after line `CHK_STATUS(createDefaultDeviceInfo(&pDeviceInfo));`:
+2. add code after line `CHK_STATUS(createDefaultDeviceInfo(&pDeviceInfo));`:
 ```
-pDeviceInfo->storageInfo.storageSize = 3 * 1024 * 1024; 
+pDeviceInfo->storageInfo.storageSize = 2 * 1024 * 1024; 
+CHK_STATUS(setDeviceInfoStorageSize(pDeviceInfo, pDeviceInfo->storageInfo.storageSize));
 ```
 ![ram consumption](images/lab2/sourcecode-ram.png)
 
@@ -28,11 +29,11 @@ make
 ./kvsAacAudioVideoStreamingSample my-kvs-stream 6000
 ```
 4. Checking
-After setting `storageSize` to 3MB, we can finger out the RAM comsuption like this:
+After setting `storageSize` to 2MB, we can finger out the RAM comsuption like this:
 
 ![ram consumption](images/lab2/kvs-ram-openSSL.png)
 
-VmRSS is the RAM consumption, it almost 18MB on the Ubuntu18.04 now. 
+VmRSS is the RAM consumption. 
 
 > PS: You can reduce the `storageSize` down to 1MB, but we don't recommand, because  the application will too sensitive to the network connection quality if you do so. Setting `storageSize` to 3-5MB on resource limited device is recommanded.
 
@@ -51,7 +52,7 @@ export LD_LIBRARY_PATH=~/environment/amazon-kinesis-video-streams-producer-c/ope
 
 
 
-### Deep dive into KVS producer
+## Deep dive into KVS producer
 
 There are some usefull information, AKA Metrics in KVS, like `Currently available storage size in bytes`, need to deep dive into code. We can leverage it to handle network traffic jam.
 
@@ -87,6 +88,7 @@ make
 ![metrics-result](images/lab2/kvs-metrics-result.png)
 
 The `available storage size` is very important when the SDK encounters a stream latency condition. user application need to check this parameter frequently and reduce video bit rate or frame per second under such condition. 
+
 
 
 
