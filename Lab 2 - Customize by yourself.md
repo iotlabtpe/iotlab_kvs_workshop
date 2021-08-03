@@ -57,7 +57,7 @@ export LD_LIBRARY_PATH=~/environment/amazon-kinesis-video-streams-producer-c/ope
 There are some usefull information, AKA Metrics in KVS, like `Currently available storage size in bytes`, need to deep dive into code. We can leverage it to handle network traffic jam.
 
 1. We change to another sample, double click on amazon-kinesis-video-streams-producer-c/samples/KvsVideoOnlyStreamingSample.c 
-2. add one line after line 60, ` UINT64 streamStopTime, streamingDuration = DEFAULT_STREAM_DURATION;
+2. add one line after, ` UINT64 streamStopTime, streamingDuration = DEFAULT_STREAM_DURATION;
 `:
 ```
     ClientMetrics kinesisVideoClientMetrics;
@@ -65,7 +65,7 @@ There are some usefull information, AKA Metrics in KVS, like `Currently availabl
 ```
 ![metrics1](images/lab2/kvs-metrics-1.png)
 
-3. add one line after line 137, ` CHK_STATUS(readFrameData(&frame, frameFilePath));`:
+3. add one line after, ` CHK_STATUS(readFrameData(&frame, frameFilePath));`:
 ```
     CHK_STATUS(getKinesisVideoMetrics(clientHandle, &kinesisVideoClientMetrics));
     printf("KVS video buffer size:%d KB, Available:%d KB\n", \
