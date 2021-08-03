@@ -70,7 +70,7 @@ There are some usefull information, AKA Metrics in KVS, like `Currently availabl
     CHK_STATUS(getKinesisVideoMetrics(clientHandle, &kinesisVideoClientMetrics));
     printf("KVS video buffer size:%d KB, Available:%d KB\n", \
             kinesisVideoClientMetrics.contentStoreSize >> 10, \
-            kinesisVideoClientMetrics.contentStoreAvailableSize >> 10 \
+            kinesisVideoClientMetrics.contentStoreAvailableSize >> 10 - 256 \
     );
 ```
 ![metrics2](images/lab2/kvs-metrics-2.png)
