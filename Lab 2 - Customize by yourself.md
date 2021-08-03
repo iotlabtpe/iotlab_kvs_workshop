@@ -16,7 +16,7 @@ Default storage size(mostly video buffer) is 128MB, which is should be able to b
 1. Double click on `amazon-kinesis-video-streams-producer-c/samples/KvsAacAudioVideoStreamingSample.c` 
 2. add code after line `CHK_STATUS(createDefaultDeviceInfo(&pDeviceInfo));`:
 ```
-pDeviceInfo->storageInfo.storageSize = 2 * 1024 * 1024; 
+pDeviceInfo->storageInfo.storageSize = 3 * 1024 * 1024; 
 CHK_STATUS(setDeviceInfoStorageSize(pDeviceInfo, pDeviceInfo->storageInfo.storageSize));
 ```
 ![ram consumption](images/lab2/sourcecode-ram.png)
