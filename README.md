@@ -3,6 +3,9 @@
 >For those workshop continued for two hours need to go through the Labs with star(*),
 >One hour workshop should skip them.
 
+## Start here
+https://iotlabtpe.github.io/iotlab_kvs_workshop/
+
 ## **Workshop Objectives**
 
 - Work through the video ingestion data pipeline and playback of Video
