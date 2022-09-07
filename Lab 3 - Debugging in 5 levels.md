@@ -13,6 +13,7 @@ name: /lab/lab-3.html
 
 ```
 export AWS_KVS_LOG_LEVEL=1
+export AWS_ENABLE_FILE_LOGGING=1
 ```
 
 ![verbose](images/lab3/kvs-debug-verbose.png)
